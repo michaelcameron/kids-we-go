@@ -1,0 +1,30 @@
+@import url("index.css");
+
+.app
+{
+    border: 5px solid red;
+}
+
+.addPhotoRegion
+{
+    float:left;
+    border: 3px solid green;
+
+}
+
+.photoRegion
+{
+    float: left;
+
+}
+
+.photo
+{
+        border: 3px solid black;
+}
+
+.addPhotoRegion, .photo
+{
+    height: 200px;
+    width: 300px;
+}
