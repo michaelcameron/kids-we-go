@@ -29,4 +29,4 @@ body
     
 }
 
-.secretHomeButton { position:absolute; width: 200px; height:200px; left: 0; bottom: 0; border: 1px dashed red;}
+.secretHomeButton { position:absolute; width: 100px; height:100px; left: 0; bottom: 0; border: 1px dashed red;}
