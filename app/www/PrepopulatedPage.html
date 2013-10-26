@@ -30,6 +30,7 @@
 
         <div class="nextPageNavigation"><a href="?id={{nextPageId}}">Next Page</a></div>
         <div class="secretHomeButton"></div>
+        <div class="{{takePictureClass}}"></div>
         <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;"><!--
         <div class="row">
             <div class="locationName col-md-6">
@@ -72,17 +73,26 @@
             alert('Failed because: ' + message);
         }
 
-        // If you swipe your page right you screen will be filled by page1 content.
-        $(".photosRegion").on("swipeleft", (function () {
-            alert("swipeleft");
-        }));
 
-
-        $(".secretHomeButton").on("dblclick", function () {
-            //alert("doubleclick, going home...");
-            window.location.href = "index.html";
-        });
         
+        $(document).ready(function () {
+            $(".takePictureRegion").click(function () {
+                alert("You wanted to take a picture, coming soon!");
+
+            });
+
+            // If you swipe your page right you screen will be filled by page1 content.
+            $(".photosRegion").on("swipeleft", (function () {
+                alert("swipeleft");
+            }));
+
+
+            $(".secretHomeButton").on("dblclick", function () {
+                //alert("doubleclick, going home...");
+                window.location.href = "index.html";
+            });
+        });
+
 
     </script>
 </body>

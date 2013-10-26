@@ -22,6 +22,7 @@ angulargap.controller("PrepopulatedPageController", function ($scope) {
             break;
         case "cherryTakePicture":
             $scope.fullScreenImageUrl = "img/MSG-takeapictureCTA.png";
+            $scope.takePictureClass = "takePictureRegion";
             break;
         default:
             alert("no id parameter found on the url!");
