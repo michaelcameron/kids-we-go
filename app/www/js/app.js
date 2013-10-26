@@ -20,6 +20,9 @@ angulargap.controller("PrepopulatedPageController", function ($scope) {
             $scope.fullScreenImageUrl = "img/MSG-fish-completed.png"
             $scope.nextPageId = "fish";
             break;
+        case "cherryTakePicture":
+            $scope.fullScreenImageUrl = "MSG-takeapictureCTA.png";
+            break;
         default:
             alert("no id parameter found on the url!");
             return;

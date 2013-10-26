@@ -29,6 +29,7 @@
     <div class="app" ng-controller="PrepopulatedPageController">
 
         <div class="nextPageNavigation"><a href="?id={{nextPageId}}">Next Page</a></div>
+        <div class="secretHomeButton"></div>
         <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;"><!--
         <div class="row">
             <div class="locationName col-md-6">
@@ -76,6 +77,12 @@
             alert("swipeleft");
         }));
 
+
+        $(".secretHomeButton").on("dblclick", function () {
+            //alert("doubleclick, going home...");
+            window.location.href = "index.html";
+        });
+        
 
     </script>
 </body>
