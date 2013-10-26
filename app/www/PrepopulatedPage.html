@@ -63,28 +63,31 @@
     <script type="text/javascript">
         app.initialize();
 
-        function onSuccess(imageData) {
-            alert("onSuccess mgn");
-            //var image = document.getElementById('myImage');
-            //image.src = "data:image/jpeg;base64," + imageData;
+        function takePicture() {
+            navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
+                destinationType: Camera.DestinationType.FILE_URI
+            });
+        }
+
+        function onSuccess(imageFile) {
+            var image = document.getElementById('myImage');
+            image.src = imageFile;
         }
 
         function onFail(message) {
             alert('Failed because: ' + message);
         }
 
-
-        
         $(document).ready(function () {
             $(".takePictureRegion").click(function () {
-                alert("You wanted to take a picture, coming soon!");
-
+                takePicture();
             });
 
             // If you swipe your page right you screen will be filled by page1 content.
             $(".photosRegion").on("swipeleft", (function () {
                 alert("swipeleft");
             }));
+
 
 
             $(".secretHomeButton").on("dblclick", function () {
