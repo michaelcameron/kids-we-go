@@ -1,40 +1,18 @@
 @import url("bootstrap.css");
 
+
+body
+{
+    width: 568px; height: 320px;
+    position:relative;
+}
+
 .app
 {
 
 
 }
 
-.locationName
-{
-    /*
-    float: left;
-    width: 400px;
-        */
-}
-/*
-
-.photosRegion
-{
-    
-    float: left;
-    width: 400px;
-}
-
-.addPhotoRegion
-{
-    float:right;
-    width: 40%;
-    border: 3px solid green;
-
-}
-*/
-
-.photo
-{
-        border: 3px solid black;
-}
 
 .nextPageNavigation {
     position:absolute;
