@@ -18,7 +18,10 @@ angulargap.controller("PrepopulatedPageController", function ($scope) {
             break;
         case "fish":
             $scope.fullScreenImageUrl = "img/MSG-fish-completed.png"
-            $scope.nextPageId = "fish";
+            $scope.nextPageId = "swing";
+            break;
+        case "swing":
+            $scope.fullScreenImageUrl = "img/MSG-swing-completed.png"
             break;
         case "cherryTakePicture":
             $scope.fullScreenImageUrl = "img/MSG-takeapictureCTA.png";
