@@ -27,15 +27,26 @@
 </head>
 <body>
     <div class="app" ng-controller="HomeController">
-        <h1 class="pageTitle">Minneapolis Sculpture Garden - Walker Art Center</h1>
-        <div class="addPhotoRegion">
-            <!-- MGN: the picture-taking function would go here... -->
+        <div class="row">
+            <div class="locationName col-md-6">
+                <h1 class="pageTitle">Minneapolis Sculpture Garden - Walker Art Center</h1>
+            </div>
+            <div class="addPhotoRegion col-md-6">
+                <div>Take your own photo to add to this page!</div>
+                <!-- MGN: the picture-taking function would go here... -->
+            </div>
         </div>
-        <div class="photosRegion">
-            <div class="photo">Imagine a photo here...</div>
-            <div class="photo">Imagine a photo here...</div>
-            <div class="photo">Imagine a photo here...</div>
+
+
+        <div class="row">
+            <div class="photosRegion col-md-6">
+                <div class="photo stockPhoto"><img src="img/CherryStockPhoto.png" /></div>
+            </div>
+            <div class="col-md-6">
+                The Minneapolis Sculpture Garden is one of the crown jewels of the city’s park system, uniting two of Minnesota’s most cherished resources—its greenspace and its cultural life. The 11-acre site Directions, home to the iconic Spoonbridge and Cherry, showcases more than 40 works from the Walker Art Center’s renowned collection. A partnership with the Minneapolis Park & Recreation Board, the Garden is a top destination for visitors, who enjoy not only the art but also the seasonal displays in the Cowles Conservatoryi and the Alene Grossman Memorial Arbor and Flower Garden.
+            </div> 
         </div>
+
     </div>
 
     <script src="js/jquery-2.0.3.js"></script>

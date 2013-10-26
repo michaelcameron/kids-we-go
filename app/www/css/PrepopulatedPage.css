@@ -1,30 +1,37 @@
-@import url("index.css");
+@import url("bootstrap.css");
 
 .app
 {
     border: 5px solid red;
+
+}
+
+.locationName
+{
+    /*
+    float: left;
+    width: 400px;
+        */
+}
+/*
+
+.photosRegion
+{
+    
+    float: left;
+    width: 400px;
 }
 
 .addPhotoRegion
 {
-    float:left;
+    float:right;
+    width: 40%;
     border: 3px solid green;
 
 }
-
-.photoRegion
-{
-    float: left;
-
-}
+*/
 
 .photo
 {
         border: 3px solid black;
-}
-
-.addPhotoRegion, .photo
-{
-    height: 200px;
-    width: 300px;
 }
