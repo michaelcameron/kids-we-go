@@ -6,13 +6,12 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <title>Hello World</title>
     </head>
     <body>
         <div class="app" ng-controller="HomeController">
-            <br><br><br>
+            <br><br>
             <a href="javascript:takePicture();">Take picture</a>
-            <img src="doesnotexist" id="myImage" height="500" width="500"></img>
+            <img src="doesnotexist" id="myImage" height="300" width="300"></img>
         </div>
 
         <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
@@ -24,7 +23,6 @@
             app.initialize();
 
             function takePicture() {
-                alert("take picture");
                 navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
                     destinationType: Camera.DestinationType.FILE_URI
                 });

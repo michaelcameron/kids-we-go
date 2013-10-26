@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <!-- <preference name="fullscreen" value="true" /> -->
+    <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="orientation" value="landscape" />
     <feature name="Camera">
