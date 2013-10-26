@@ -1,40 +1,18 @@
 @import url("bootstrap.css");
 
+
+body
+{
+    width: 568px; height: 320px;
+    position:relative;
+}
+
 .app
 {
 
 
 }
 
-.locationName
-{
-    /*
-    float: left;
-    width: 400px;
-        */
-}
-/*
-
-.photosRegion
-{
-    
-    float: left;
-    width: 400px;
-}
-
-.addPhotoRegion
-{
-    float:right;
-    width: 40%;
-    border: 3px solid green;
-
-}
-*/
-
-.photo
-{
-        border: 3px solid black;
-}
 
 .nextPageNavigation {
     position:absolute;
@@ -51,4 +29,4 @@
     
 }
 
-.secretHomeButton { position:absolute; width: 200px; height:200px; left: 0; bottom: 0; border: 1px dashed red;}
+.secretHomeButton { position:absolute; width: 100px; height:100px; left: 0; bottom: 0; border: 1px dashed red;}
