@@ -26,25 +26,29 @@
     <title>Prepopulated page</title>
 </head>
 <body>
-    <div class="app" ng-controller="HomeController">
+    <div class="app" ng-controller="PrepopulatedPageController">
+
+        <div class="nextPageNavigation"><a href="google.com">Next Page</a></div>
+
         <div class="row">
             <div class="locationName col-md-6">
-                <h1 class="pageTitle">Minneapolis Sculpture Garden - Walker Art Center</h1>
+                <h1 class="pageTitle">{{title}}</h1>
             </div>
             <div class="addPhotoRegion col-md-6">
-                <div>Take your own photo to add to this page!</div>
                 <!-- MGN: the picture-taking function would go here... -->
+                <button onclick="alert('about to take a picture mgn. navigator.camera is... ' + typeof(navigator.camera)); navigator.camera.getPicture(null, null);">Take your own photo to add to this page!</button>
+
             </div>
         </div>
 
 
         <div class="row">
             <div class="photosRegion col-md-6">
-                <div class="photo stockPhoto"><img src="img/CherryStockPhoto.png" /></div>
+                <div class="photo stockPhoto"><img src="{{stockPhotoUrl}}" /></div>
             </div>
             <div class="col-md-6">
-                The Minneapolis Sculpture Garden is one of the crown jewels of the city’s park system, uniting two of Minnesota’s most cherished resources—its greenspace and its cultural life. The 11-acre site Directions, home to the iconic Spoonbridge and Cherry, showcases more than 40 works from the Walker Art Center’s renowned collection. A partnership with the Minneapolis Park & Recreation Board, the Garden is a top destination for visitors, who enjoy not only the art but also the seasonal displays in the Cowles Conservatoryi and the Alene Grossman Memorial Arbor and Flower Garden.
-            </div> 
+                {{locationCopy}}
+            </div>
         </div>
 
     </div>
@@ -56,6 +60,23 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
         app.initialize();
+
+        function onSuccess(imageData) {
+            alert("onSuccess mgn");
+            //var image = document.getElementById('myImage');
+            //image.src = "data:image/jpeg;base64," + imageData;
+        }
+
+        function onFail(message) {
+            alert('Failed because: ' + message);
+        }
+
+        // If you swipe your page right you screen will be filled by page1 content.
+        $(".photosRegion").on("swipeleft", (function () {
+            alert("swipeleft");
+        }));
+
+
     </script>
 </body>
 </html>
