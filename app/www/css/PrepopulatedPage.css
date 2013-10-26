@@ -35,3 +35,9 @@
 {
         border: 3px solid black;
 }
+
+.nextPageNavigation {
+    position:absolute;
+    top:0px;
+    right: 0px;
+}
