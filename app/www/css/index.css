@@ -24,7 +24,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background:url(../img/cream_pixels.png);
+    background-color:#CFE6F6;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -53,18 +53,20 @@ body {
     .app {
         background-position:left center;
         padding:20px;  /* padding-top + padding-bottom + text area = image height */
-        margin:50px;  /* offset vertical: half of image height */
+        margin-left:30px 0 10px 30px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
 }
 
+
 h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin-left:20px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+  font-size:24px;
+  font-weight:normal;
+  font-family: 'Ultra', serif;
+  margin-left:20px;
+  overflow:visible;
+  padding:0px;
+  text-align:center;
 }
 
 .event {
@@ -101,4 +103,59 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+.logo img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+/*button*/
+
+.a_demo_two {
+    background-color:#6fba26;
+    padding:10px;
+    position:relative;
+    font-family: 'Rokkitt', serif;
+    font-size: 15px;
+    text-decoration:none;
+    color:#fff;
+    background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+    box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
+    border-radius: 5px;
+}
+ 
+.a_demo_two:active {
+    top:7px;
+    background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+    box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+    color: #156785;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+    background: rgb(44,160,202);
+}
+
+.a_demo_two:hover {
+    text-decoration: none;
+    color: #156785;
+}
+
+.a_demo_two::before {
+    background-color:#072239;
+    content:"";
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:4px;
+    left:-2px;
+    top:5px;
+    z-index:-1;
+    border-radius: 6px;
+    box-shadow: 0px 1px 0px #fff;
+}
+ 
+.a_demo_two:active::before {
+    top:-2px;
 }
