@@ -3,8 +3,8 @@
 
 .pin img 
 {
-    width: auto;  /* use the actual size of the image, not the scaled down version... */
+  width: auto;  /* use the actual size of the image, not the scaled down version... */
 	border-bottom: none;
 	padding-bottom: 0;
-  	margin-bottom: 0;
+  margin-bottom: 0;
 }
