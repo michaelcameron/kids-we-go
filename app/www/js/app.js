@@ -32,7 +32,7 @@ angulargap.controller("PrepopulatedPageController", function ($scope) {
             
             break;
         case "cherryTakePicture":
-            $scope.fullScreenImageUrl = "img/MSG-takeapictureCTA.png";
+            $scope.fullScreenImageUrl = "img/spoon_takepic_trivia_homeicon3.png";
             $scope.takePictureClass = "takePictureRegion";
             $scope.triviaCorrectAnswerClass = "triviaCorrectAnswerRegion";
             break;
