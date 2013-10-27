@@ -20,14 +20,14 @@ h1 {
 
 h1.gamify {
   font-size: 20px;
-  color: green;
+  color: red;
   font-family: 'Rokkitt', serif;
 }
 
 h1.gamify-done {
   font-size: 20px;
   font-family: 'Rokkitt', serif;
-  color: red;
+  color: green;
 }
 
 /*
