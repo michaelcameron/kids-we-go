@@ -98,3 +98,7 @@ h1.gamify-done {
 {
     width: 4000px;  /* enough space to fit all the tiles in one row */
 }
+
+.nonscrollingHeader{
+    margin-top: 5px;
+}
