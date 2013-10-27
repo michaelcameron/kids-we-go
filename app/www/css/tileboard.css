@@ -13,7 +13,7 @@ h1 {
   padding:0px;
   text-align:center;
 }
-
+/*
 #wrapper {
   width: 90%;
   max-width: 2600px;
@@ -32,13 +32,14 @@ h1 {
   column-gap: 10px;
   column-fill: auto;
 }
-
+    */
 .pin {
   display: inline-block;
   background: #FEFEFE;
   border: 1px solid #FAFAFA;
   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 8px 3px 0;
+  /*margin: 8px 3px 0;*/
+  margin: 10px;
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
@@ -69,6 +70,11 @@ h1 {
   font-size: 10px;
 }
 
+#wrapper
+{
+    width: 4000px;  /* enough space to fit all the tiles in one row */
+    height: 300px;
+}
 
 #columns:hover .pin:not(:hover) {
   opacity: 0.4;
