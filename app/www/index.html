@@ -27,6 +27,15 @@
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript">
             app.initialize();
+
+            $(document).ready(function () {
+
+                // Click anywhere to navigate onward!!!
+                $("body").click(function () {
+                    window.location.href = "tileboard.html";
+                });
+
+            });
         </script>
     </body>
 </html>
