@@ -7,12 +7,23 @@ body {
 h1 {
   font-size:24px;
   font-weight:normal;
-  font-family: 'Ultra', serif;
+  font-family: 'Fredoka One', cursive;
   margin-left:20px;
   overflow:visible;
   padding:0px;
   text-align:center;
 }
+
+h1.gamify {
+  font-size: 20px;
+  color: green;
+}
+
+h1.gamify-done {
+  font-size: 20px;
+  color: red;
+}
+
 /*
 #wrapper {
   width: 90%;
