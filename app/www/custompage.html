@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 
 <html>
@@ -14,9 +14,13 @@
     </head> 
     <body>
         <div class="app" ng-controller="PrepopulatedPageController">
+            <img src="img/custom_w_tool.png" style="position:absolute; width: 568px; height: 320px;">
+            <div class="takePictureRegion">
+                <img id="myImage" style="width: 130px; height: 180px;" />
+            </div>
             <div class="secretHomeButton"></div>
-            <img src="img/custompgblank.png" style="position:absolute; width: 568px; height: 320px;">
-            <textarea style="position: absolute;left: 300px;top: 110px;width: 250px;height: 180px;z-index: 1000;"></textarea>
+            
+            <textarea style="position: absolute;left: 305px;top: 110px;width: 250px;height: 150px;" placeholder="Talk about what you did and saw..."></textarea>
             <div><a href="tileboardcomplete.html">Home</a></div>
         </div>
 
@@ -31,7 +35,26 @@
                 $(".secretHomeButton").click(function () {
                     window.location.href = "tileboardcomplete.html";
                 });
+
+                $(".takePictureRegion").click(takePicture);
             });
+
+            function takePicture() {
+                navigator.camera.getPicture(onSuccess, onFail, {
+                    quality: 100,
+                    destinationType: Camera.DestinationType.FILE_URI
+                });
+            }
+
+            function onSuccess(imageFile) {
+                var image = document.getElementById('myImage');
+                image.src = imageFile;
+            }
+
+            function onFail(message) {
+                alert('Failed because: ' + message);
+            }
+
         </script>
     </body>
 </html>
