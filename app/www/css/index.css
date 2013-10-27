@@ -58,6 +58,11 @@ body {
     }
 }
 
+/* center the stuff on the screen*/
+.app {
+    width: 240px;
+    margin: auto;
+}
 
 h1 {
   font-size:24px;
@@ -111,6 +116,12 @@ h1 {
 }
 
 /*button*/
+
+.a_demo_two{ /* center it*/
+        display: block;
+    margin: auto;
+    width: 140px;
+}
 
 .a_demo_two {
     background-color:#6fba26;

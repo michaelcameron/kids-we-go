@@ -46,7 +46,7 @@ h1 {
   padding: 3px;
   padding-bottom: 5px;
   background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
-  opacity: 1;
+
   
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -74,8 +74,4 @@ h1 {
 {
     width: 4000px;  /* enough space to fit all the tiles in one row */
     height: 300px;
-}
-
-#columns:hover .pin:not(:hover) {
-  opacity: 0.4;
 }
