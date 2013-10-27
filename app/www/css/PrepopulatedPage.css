@@ -28,4 +28,18 @@ body
     height: 155px;
 }
 
-.secretHomeButton { position:absolute; width: 100px; height:100px; left: 0; bottom: 0; border: 1px dashed red;}
+.secretHomeButton {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+}
+
+.triviaCorrectAnswerRegion {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 275px;
+    top: 240px;
+}

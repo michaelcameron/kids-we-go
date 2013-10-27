@@ -6,6 +6,7 @@ angulargap.controller("HomeController", function ($scope) {
 angulargap.controller("PrepopulatedPageController", function ($scope) {
     
     $scope.takePictureClass = "hidden"; // by default
+    $scope.triviaCorrectAnswerClass = "hidden"; // by default
 
     switch (getURLParameter("id"))
     {
@@ -33,6 +34,7 @@ angulargap.controller("PrepopulatedPageController", function ($scope) {
         case "cherryTakePicture":
             $scope.fullScreenImageUrl = "img/MSG-takeapictureCTA.png";
             $scope.takePictureClass = "takePictureRegion";
+            $scope.triviaCorrectAnswerClass = "triviaCorrectAnswerRegion";
             break;
         default:
             alert("no id parameter found on the url!");

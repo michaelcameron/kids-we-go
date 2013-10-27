@@ -13,11 +13,11 @@
 
         <!-- <div class="nextPageNavigation"><a href="?id={{nextPageId}}">Next Page</a></div> -->
         <div class="secretHomeButton"></div>
+        <div class="{{triviaCorrectAnswerClass}}"></div>
         <div class="{{takePictureClass}}">
             <img id="myImage" style="width: 235px; height: 155px;" />
         </div>
         <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;">
-        <div><a href="tileboardcomplete.html">Home</a></div>
     </div>
 
     <script src="js/jquery-2.0.3.js"></script>
@@ -29,7 +29,8 @@
         app.initialize();
 
         function takePicture() {
-            navigator.camera.getPicture(onSuccess, onFail, { quality: 100,
+            navigator.camera.getPicture(onSuccess, onFail, {
+                quality: 100,
                 destinationType: Camera.DestinationType.FILE_URI
             });
         }
@@ -48,13 +49,12 @@
                 takePicture();
             });
 
-            // If you swipe your page right you screen will be filled by page1 content.
-            $(".photosRegion").on("swipeleft", (function () {
-                alert("swipeleft");
-            }));
-
             $(".secretHomeButton").click(function () {
-                window.location.href = "index.html";
+                window.location.href = "tileboard.html";
+            });
+
+            $(".triviaCorrectAnswerRegion").click(function () {
+                alert("That's right! The cherry weighs 1,200 pounds. Wow!");
             });
         });
 
