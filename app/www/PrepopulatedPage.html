@@ -64,7 +64,13 @@
             });
 
             $(".triviaCorrectAnswerRegion").click(function () {
-                alert("That's right! The cherry weighs 1,200 pounds. Wow!");
+
+                navigator.notification.alert(
+                    "That's right! The cherry weighs 1,200 pounds. Wow!",  // message
+                    false,                  // callback to invoke
+                    'Correct Answer',            // title
+                    "OK"          // buttonLabels
+                );
             });
         });
 
