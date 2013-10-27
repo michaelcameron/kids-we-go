@@ -1,12 +1,13 @@
 @import url("bootstrap.css");
 
 body {
-  background:url(../img/cream_pixels.png);
+  background:url("../img/cream_pixels.png");
 }
 
 h1 {
   font-size:24px;
   font-weight:normal;
+  font-family: 'Ultra', serif;
   margin-left:20px;
   overflow:visible;
   padding:0px;
@@ -15,19 +16,19 @@ h1 {
 
 #wrapper {
   width: 90%;
-  max-width: 1550px;
-  min-width: 1550px;
+  max-width: 2600px;
+  min-width: 2600px;
   margin:20px;
 }
 
 #columns {
-  -webkit-column-count: 7;
+  -webkit-column-count: 12;
   -webkit-column-gap: 10px;
   -webkit-column-fill: auto;
-  -moz-column-count: 7;
+  -moz-column-count: 12;
   -moz-column-gap: 10px;
   -moz-column-fill: auto;
-  column-count: 7;
+  column-count: 12;
   column-gap: 10px;
   column-fill: auto;
 }
@@ -56,15 +57,16 @@ h1 {
   width: 200px;
   height: 200px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 6px;
+  padding-bottom: 9px;
   margin-bottom: 5px;
 }
 
 .pin p {
-  font: 8px/5px Arial, sans-serif;
   color: #333;
   margin: 0;
   padding: 2px;
+  font-family: 'Rokkitt', serif;
+  font-size: 10px;
 }
 
 

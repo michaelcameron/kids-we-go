@@ -8,18 +8,18 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+        <title>Kid Around</title>
     </head> 
     <body>
         <div class="app" ng-controller="HomeController">
-            <a href="camera.html">Camera</a>
-            <input type="text" ng-model="message"/>
-            <br/><br /><br /> <!-- I am lazy, BR it is -->
-            <button style="width:400px; height: 200px;" onclick="window.location = 'PrepopulatedPage.html?id=cherry'">Look at a past vacation</button>
-            <button style="width:400px; height: 200px;" onclick="window.location = 'tileboard.html'">Create a new vacation</button>
-            <!-- <p class="event received"><a href="tileboard.html"></a></p> -->
+            <div class="logo">
+                <img src="img/logo.png" />
+            </div>
+            <br><br/>
+            <a href='tileboard.html' class="a_demo_two">Start Your Book</a>
         </div>
-
         <script src="js/jquery-2.0.3.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
