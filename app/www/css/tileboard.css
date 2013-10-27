@@ -83,6 +83,12 @@ h1.gamify-done {
 
 #wrapper
 {
-    width: 4000px;  /* enough space to fit all the tiles in one row */
+    width: 568px;
     height: 300px;
+    overflow-x:auto;
+}
+
+#columns
+{
+    width: 4000px;  /* enough space to fit all the tiles in one row */
 }
