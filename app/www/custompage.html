@@ -16,7 +16,7 @@
         <div class="app" ng-controller="PrepopulatedPageController">
             <img src="img/custom_w_tool.png" style="position:absolute; width: 568px; height: 320px;">
             <div class="takePictureRegion">
-                <img id="myImage" style="width: 130px; height: 180px; transform: rotate(3deg); " />
+                <img id="myImage" style="display:none; width: 130px; height: 180px; transform: rotate(3deg); " />
             </div>
             <div class="secretHomeButton"></div>
             
@@ -60,6 +60,7 @@
 
             function onSuccess(imageFile) {
                 var image = document.getElementById('myImage');
+                image.style.display = "block";
                 image.src = imageFile;
             }
 

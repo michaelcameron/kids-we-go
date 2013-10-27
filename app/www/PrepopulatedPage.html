@@ -15,7 +15,7 @@
         <div class="secretHomeButton"></div>
         <div class="{{triviaCorrectAnswerClass}}"></div>
         <div class="{{takePictureClass}}">
-            <img id="myImage" style="width: 235px; height: 155px;" />
+            <img id="myImage" style="display: none; width: 235px; height: 155px;" />
         </div>
         <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;">
     </div>
@@ -46,6 +46,7 @@
 
         function onSuccess(imageFile) {
             var image = document.getElementById('myImage');
+            image.style.display = "block";
             image.src = imageFile;
         }
 
