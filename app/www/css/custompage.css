@@ -20,12 +20,11 @@ body
 }
 
 .takePictureRegion {
+    height: 180px;
+    left: 140px;
     position: absolute;
-    left: 350px;
-    top:5px;
-    width: 190px;
-    height: 150px;
-    
+    top: 100px;
+    width: 130px;
 }
 
 .secretHomeButton { position:absolute; width: 100px; height:100px; left: 0; bottom: 0; border: 1px dashed red;}
