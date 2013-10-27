@@ -20,7 +20,6 @@ body
 }
 
 .takePictureRegion {
-    border: 2px solid #0000FF;
     height: 180px;
     left: 140px;
     position: absolute;

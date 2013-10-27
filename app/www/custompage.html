@@ -16,7 +16,7 @@
         <div class="app" ng-controller="PrepopulatedPageController">
             <img src="img/custom_w_tool.png" style="position:absolute; width: 568px; height: 320px;">
             <div class="takePictureRegion">
-                <img id="myImage" style="width: 130px; height: 180px;" />
+                <img id="myImage" style="width: 130px; height: 180px; transform: rotate(3deg); " />
             </div>
             <div class="secretHomeButton"></div>
             
@@ -40,10 +40,22 @@
             });
 
             function takePicture() {
-                navigator.camera.getPicture(onSuccess, onFail, {
-                    quality: 100,
-                    destinationType: Camera.DestinationType.FILE_URI
-                });
+                try
+                {
+                    navigator.camera.getPicture(onSuccess, onFail, {
+                        quality: 100,
+                        destinationType: Camera.DestinationType.FILE_URI
+                    });
+                }
+                catch (ex)
+                {
+                    fakeItOut();
+                }
+            }
+
+            function fakeItOut()
+            {
+                onSuccess("img/smiling-kids.jpg");
             }
 
             function onSuccess(imageFile) {
