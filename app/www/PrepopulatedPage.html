@@ -28,12 +28,14 @@
 <body>
     <div class="app" ng-controller="PrepopulatedPageController">
 
-        <div class="nextPageNavigation"><a href="?id={{nextPageId}}">Next Page</a></div>
+        <!-- <div class="nextPageNavigation"><a href="?id={{nextPageId}}">Next Page</a></div> -->
         <div class="secretHomeButton"></div>
         <div class="{{takePictureClass}}">
             <img id="myImage" style="width:190px; height:150px;" />
         </div>
-        <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;"><!--
+        <img src="{{fullScreenImageUrl}}" style="width: 568px; height: 320px;">
+        <div><a href="tileboardcomplete.html">Home</a></div>
+        <!--
         <div class="row">
             <div class="locationName col-md-6">
                 <h1 class="pageTitle">{{title}}</h1>
