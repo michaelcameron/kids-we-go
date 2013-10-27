@@ -7,20 +7,24 @@ body {
 h1 {
   font-size:24px;
   font-weight:normal;
-  font-family: 'Fredoka One', cursive;
+  /*font-family: 'Fredoka One', cursive;*/
+  font-family: LeHavreLayers-Primary; src: url('insigne - LeHavreLayers-Primary.otf');
   margin-left:20px;
   overflow:visible;
   padding:0px;
   text-align:center;
+  color: #9b59b6;
 }
 
 h1.gamify {
   font-size: 20px;
   color: green;
+  font-family: 'Rokkitt', serif;
 }
 
 h1.gamify-done {
   font-size: 20px;
+  font-family: 'Rokkitt', serif;
   color: red;
 }
 
