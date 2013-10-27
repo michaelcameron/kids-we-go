@@ -1,75 +1,7 @@
 @import url("bootstrap.css");
+@import url("tileboard.css");  /* inherit all the pinteresty styles... */
 
-body {
-  background:url("../img/cream_pixels.png");
-}
-
-h1 {
-  font-size:24px;
-  font-weight:normal;
-  font-family: 'Ultra', serif;
-  margin-left:20px;
-  overflow:visible;
-  padding:0px;
-  text-align:center;
-}
-
-#wrapper {
-  width: 90%;
-  max-width: 2600px;
-  min-width: 2600px;
-  margin:20px;
-}
-
-#columns {
-  -webkit-column-count: 12;
-  -webkit-column-gap: 10px;
-  -webkit-column-fill: auto;
-  -moz-column-count: 12;
-  -moz-column-gap: 10px;
-  -moz-column-fill: auto;
-  column-count: 12;
-  column-gap: 10px;
-  column-fill: auto;
-}
-
-.pin {
-  display: inline-block;
-  background: #FEFEFE;
-  border: 1px solid #FAFAFA;
-  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 8px 3px 0;
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  column-break-inside: avoid;
-  padding: 3px;
-  padding-bottom: 5px;
-  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
-  opacity: 1;
-  
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
-.pin img {
-  width: 200px;
-  height: 200px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 9px;
-  margin-bottom: 5px;
-}
-
-.pin p {
-  color: #333;
-  margin: 0;
-  padding: 2px;
-  font-family: 'Rokkitt', serif;
-  font-size: 10px;
-}
-
-
-#columns:hover .pin:not(:hover) {
-  opacity: 0.4;
+.pin img 
+{
+    width: auto;  /* use the actual size of the image, not the scaled down version... */
 }
