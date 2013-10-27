@@ -1,0 +1,31 @@
+@import url("bootstrap.css");
+
+
+body
+{
+    width: 568px; height: 320px;
+    position:relative;
+}
+
+.app
+{
+
+
+}
+
+.nextPageNavigation {
+    position:absolute;
+    bottom:0px;
+    right: 0px;
+}
+
+.takePictureRegion {
+    position: absolute;
+    left: 350px;
+    top:5px;
+    width: 190px;
+    height: 150px;
+    
+}
+
+.secretHomeButton { position:absolute; width: 100px; height:100px; left: 0; bottom: 0; border: 1px dashed red;}
